@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/contactpage.css">
+</head>
+<body>
+    <header>
+        <h1>Rustic Creations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+                <h2>Contact Us</h2>
+            <form action="form processer" method="post">
+                <label for="name" class="name">Name:
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </label>
+                <label for="email" class= "email" >
+                    Email:
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </label>
+                <label for="Phone" class="phone">
+                    Phone number:
+                    <input type="number" name="phone" placeholder="Your Phone Number" required>
+                </label>
+                <label for="contactmethod">
+                    Contact method
+                    <input type="text" name="preferred" placeholder="i.e Text any time of day" >
+                </label>
+                <label for="message" class="message">
+                    Message
+                    <input type="text" name="message" placeholder="Your message">
+                </label>
+                <button id="submit" type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
