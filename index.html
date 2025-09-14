@@ -2,72 +2,127 @@
 <html>
     <head>
         <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="resources/css/landingpage.css">
+        <link rel="stylesheet" type="text/css" href="./resources/css/landingpage.css">
     </head>
     <body>
         <header>
-                <h1>Rustic Creations</h1>
+            <div class="spacer"></div>
+                <h1 class="title">Rustic Creations</h1>
+            <div class="spacer"></div>
             <nav>
                 <ul>
-                    <li><a href="landingpage.html">Home</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="./pages/contact.html" target="_blank">Contact</a></li>
+                    
                 </ul>
             </nav>
         </header>
         <main>
-            <div id="book" class="banner">
-                <div class="banner-text">
-                        <p>Book your session today!</p>
-                    <a href="https://www.facebook.com/SydneeLombard99" target="_blank"><button>More Info</button></a>
+            <div class="background">
+                <div id="book" class="banner">
+                    <div class="banner-text">
+                            <p>Book your session today!</p>
+                        <a href="https://www.facebook.com/SydneeLombard99" target="_blank"><button type="button" id="More Info">More Info</button></a>
+                    </div>
                 </div>
             </div>
             <div id="about" class="aboutme">
-                    <img src="resources/images/about-me.jpg" alt="about me">
-                <div class="aboutme-text">
-                        <h2>About Me</h2>
-                    <div class="aboutme-content">
-                        <p>"Seems, madam! Nay, it is; I know not seems.
-                            ’Tis not alone my inky cloak, good mother,
-                            Nor customary suits of solemn black,
-                            Nor windy suspiration of forc’d breath,
-                            No, nor the fruitful river in the eye,
-                            Nor the dejected haviour of the visage,
-                            Together with all forms, moods, shows of grief,
-                            That can denote me truly. These indeed seem,
-                            For they are actions that a man might play;
-                            But I have that within which passeth show;
-                            These but the trappings and the suits of woe."</p>
-                        <p>~William Shakespeare, Hamlet~</p>
+                        <img src="resources/images/about-me.jpg" alt="about me">
+                    <div class="aboutme-text">
+                            <h2>About Me</h2>
+                        <div class="aboutme-content">
+                            <p>I'm a wife and a mom of two, who loves capturing those special moments. From Portraits to events and weddings. Natural light and settings along with the right angles to capture the perfect photos.Telling a whole stroy about the person that bring the photo to life.</p>
+                            <p>~Sydnee Musick~</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             <div id="portfolio" class="portfolio">
                     <h2 class="portfolio-text">Portfolio</h2>
                 <div class="box">
-                    <div class="portfolio-content">
-                        <a href="https://www.facebook.com/media/set/?set=a.101413692270430&type=3" target="_blank"><img src="resources/images/portfolio1.jpg" alt="portfolio1"></a>
-                        <h4>Animals</h4>
+                    <div class="portfolio-content" data-Cat="Animals">
+                       <a href="./pages/album/animals.html"> <img src="resources/images/portfolio1.jpg" alt="Animal photos">
+                        <h4>Portraits</h4></a>
                     </div>
-                    <div class="portfolio-content">
-                        <a href="https://www.facebook.com/media/set/?set=a.101377192274080&type=3" target="_blank"><img src="resources/images/portfolio2.jpg" alt="portfolio2"></a>
-                        <h4>Adopt a senior</h4>
+                    <div class="portfolio-content" data-Cat="">
+                       <a href="./pages/album/adopt-senior.html"><img src="resources/images/portfolio2.jpg" alt="Adopt a senior project">
+                        <h4>Seniors</h4></a> 
                     </div>
-                    <div class="portfolio-content">
-                        <a href="https://www.facebook.com/media/set/?set=a.101400675605065&type=3" target="_blank"><img src="resources/images/portfolio3.jpg" alt="portfolio3"></a>
-                        <h4>Family</h4>
+                    <div class="portfolio-content" data-Cat="">
+                        <a href="./pages/album/family.html"><img src="resources/images/portfolio3.jpg" alt="Family photos">
+                        <h4>Family</h4></a>
                     </div>
-                    <div class="portfolio-content">
-                        <a href="https://www.facebook.com/media/set/?set=a.586300307109406&type=3" target="_blank"><img src="resources/images/portfolio4.jpg" alt="portfolio4"></a>
-                        <h4>Engament</h4>
+                    <div class="portfolio-content" data-Cat="">
+                        <a href="./pages/album/engament.html"><img src="resources/images/portfolio4.jpg" alt="Engament photos">
+                        <h4>Engament</h4></a>
                     </div>
-                    <div  class="portfolio-content">
-                        <a href="https://www.facebook.com/SydneeLombard99/photos_albums" target="_blank"><img src="resources/images/photo_book.png" alt="Photo book"></a>
+                    <div class="portfolio-content" data-Cat="">
+                        <a href="./pages/album/engament.html"><img src="resources/images/photo_book.png" alt="Wedding photos">
+                        <h4>Wedding</h4></a>
+                    </div>
+                    <div  class="portfolio-content" data-Cat="">
+                        <img src="resources/images/photo_book.png" alt="More photos">
                         <h4>Photo album</h4>
                     </div>
                 </div>
             </div>
+            <div class="Pricing">
+                    <h2>Pricing</h2>
+                    <div class="pricinglists">
+                        <div class="pricing-content">
+                            <h3>Bronze Tier</h3>
+                            <ul>
+                                <li>$50</li>
+                                <li>10 Edited Photos</li>
+                                <li>30 Minutes</li>
+                                <li>1 outfit</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-content">
+                            <h3>Silver Tier</h3>
+                            <ul>
+                                <li>$80</li>
+                                <li>25 Edited Photos</li>
+                                <li>1 Hour</li>
+                                <li>2 Outfits</li>
+                                <li>2 Locations</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-content">
+                            <h3>Gold Tier</h3>
+                            <ul>
+                                <li>$175</li>
+                                <li>50 Edited Photos</li>
+                                <li>1 hour 30 mins</li>
+                                <li>3 Outfits</li>
+                                <li>3 Locations</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-content">
+                            <h3>Engament Session</h3>
+                            <ul>
+                                <li>$150</li>
+                                <li>30+ Edited Photos</li>
+                                <li>1 Hour</li>
+                                <li>Color & BW</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-content">
+                            <h3>Wedding & Reception</h3>
+                            <ul>
+                                <li>$500</li>
+                                <li>100+ Edited Photos</li>
+                                <li>6-8 Hours</li>
+                                <li>Color & BW</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            <!-- this is the photo display area 
+             <div id="gallery-modal" class="modal" >
+                <span class="close">&times;</span>
+                <div class="modal-content" id="gallery-images"></div>
+             </div>-->
         </main>
         <footer>
 

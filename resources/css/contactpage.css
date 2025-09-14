@@ -3,29 +3,29 @@ body{
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: rgba(86, 216, 233, 0.945);
-    background-color: rgb(0, 80, 0);               
+    background-color: rgb(156, 94, 75);               
 }
-a{
+/* header */
+header a{
     text-decoration: underline;
     color: white;
 }
-a:hover {
+header a:hover {
     color: rgb(0, 80, 0);
 }
-a:active {
+header a:active {
     color: white;
 }
-button {
+header button {
     cursor: pointer;
 }
-/* header */
 header {
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100%;
     z-index: 100;
     margin: 0;
@@ -35,10 +35,32 @@ header li {
     display: inline-flex;
     margin: 0 10px;
 }
+.title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+/*body*/
 main{
     padding-top: 10rem;
 }
-
+.call-button {
+    width: 50%;
+    padding: 1rem;
+    margin-left: 40%;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.form-container p{
+    padding: 1rem;
+    margin-left: 30%;
+    color: black;
+}
 .form-container{
     width: 90%;
     max-width: 600px;
@@ -81,7 +103,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    transition:  0.3s;
     
 }
 button:hover{

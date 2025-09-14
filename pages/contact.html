@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="resources/css/contactpage.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/contactpage.css">
 </head>
+
 <body>
     <header>
-        <h1>Rustic Creations</h1>
+        <div class="spacer"></div>
+                <h1 class="title">Rustic Creations</h1>
+            <div class="spacer"></div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <!--<li><a href="./contact.html">Contact</a></li>
+                <li><a href="../index.html/#portfolio">portfolio</a></li>
+                <li><a href="#about">About</a></li>-->
             </ul>
         </nav>
     </header>
     <main>
         <div class="form-container">
-                <h2>Contact Us</h2>
+            <h2>Contact Us</h2>
+            <p>Call Now or send a Message!</p>
+            <a href="tel:+14174209496" class="call-button">417-420-9496</a>
             <form action="form processer" method="post">
                 <label for="name" class="name">Name:
                     <input type="text" name="name" placeholder="Your Name" required>
                 </label>
-                <label for="email" class= "email" >
+                <label for="email" class="email">
                     Email:
                     <input type="email" name="email" placeholder="Your Email" required>
                 </label>
@@ -33,7 +39,7 @@
                 </label>
                 <label for="contactmethod">
                     Contact method
-                    <input type="text" name="preferred" placeholder="i.e Text any time of day" >
+                    <input type="text" name="preferred" placeholder="i.e Text any time of day">
                 </label>
                 <label for="message" class="message">
                     Message
@@ -47,4 +53,5 @@
 
     </footer>
 </body>
+
 </html>
