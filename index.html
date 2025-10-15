@@ -23,7 +23,7 @@
                 <div id="book" class="banner">
                     <div class="banner-text">
                             <p>Book your session today!</p>
-                        <a href="https://www.facebook.com/SydneeLombard99" target="_blank"><button type="button" id="More Info">More Info</button></a>
+                        <a href="./pages/contact.html" target="_blank"><button type="button" id="More Info">More Info</button></a>
                     </div>
                 </div>
             </div>
@@ -40,31 +40,26 @@
             <div id="portfolio" class="portfolio">
                     <h2 class="portfolio-text">Portfolio</h2>
                 <div class="box">
-                    <div class="portfolio-content" data-Cat="Animals">
-                       <a href="./pages/album/animals.html"> <img src="resources/images/portfolio1.jpg" alt="Animal photos">
-                        <h4>Portraits</h4></a>
+                    <div class="portfolio-content" id="Solos">
+                       <a href="#image-container" ><img src="resources/images/solo.jpg" alt="Portraits">
+                        <h4>Solos</h4></a>
                     </div>
-                    <div class="portfolio-content" data-Cat="">
-                       <a href="./pages/album/adopt-senior.html"><img src="resources/images/portfolio2.jpg" alt="Adopt a senior project">
+                    <div class="portfolio-content" id="Seniors">
+                       <a href="#image-container"><img src="resources/images/Senior.jpg" alt="Adopt a senior project">
                         <h4>Seniors</h4></a> 
                     </div>
                     <div class="portfolio-content" data-Cat="">
-                        <a href="./pages/album/family.html"><img src="resources/images/portfolio3.jpg" alt="Family photos">
-                        <h4>Family</h4></a>
+                        <img src="resources/images/engagment.jpg" alt="Engagment photos">
+                        <h4>Engagment</h4>
                     </div>
                     <div class="portfolio-content" data-Cat="">
-                        <a href="./pages/album/engament.html"><img src="resources/images/portfolio4.jpg" alt="Engament photos">
-                        <h4>Engament</h4></a>
-                    </div>
-                    <div class="portfolio-content" data-Cat="">
-                        <a href="./pages/album/engament.html"><img src="resources/images/photo_book.png" alt="Wedding photos">
-                        <h4>Wedding</h4></a>
-                    </div>
-                    <div  class="portfolio-content" data-Cat="">
-                        <img src="resources/images/photo_book.png" alt="More photos">
-                        <h4>Photo album</h4>
+                        <img src="resources/images/wedding.jpg" alt="Wedding photos">
+                        <h4>Wedding</h4>
                     </div>
                 </div>
+            </div>
+            <div id="image-container">
+                    <!--images will load here dynamicly-->
             </div>
             <div class="Pricing">
                     <h2>Pricing</h2>
@@ -99,15 +94,6 @@
                             </ul>
                         </div>
                         <div class="pricing-content">
-                            <h3>Engament Session</h3>
-                            <ul>
-                                <li>$150</li>
-                                <li>30+ Edited Photos</li>
-                                <li>1 Hour</li>
-                                <li>Color & BW</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-content">
                             <h3>Wedding & Reception</h3>
                             <ul>
                                 <li>$500</li>
@@ -118,12 +104,8 @@
                         </div>
                     </div>
             </div>
-            <!-- this is the photo display area 
-             <div id="gallery-modal" class="modal" >
-                <span class="close">&times;</span>
-                <div class="modal-content" id="gallery-images"></div>
-             </div>-->
         </main>
+        <script src="app.js"></script>
         <footer>
 
         </footer>

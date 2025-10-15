@@ -188,6 +188,19 @@ header li {
     text-align: center; /* Center the text */
     margin-top: 0.5rem; /* Add some margin if needed */
 }
+/* img container*/
+#image-container {
+    /*display: none;*/
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    row-gap: 2rem;
+    background-color: rgb(156, 94, 75);
+}
+#image-container img {
+    width: 25.5rem;
+    height: 25.5rem;
+}
 /*pricing*/
 .Pricing {
     border-top: 4px solid black;
