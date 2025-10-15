@@ -26,47 +26,42 @@ function imageGenerator(arr){
 
     imageContainer.innerHTML = '';
 
-    //loop through the images in the array
-    for (let i = 0; i < arr.length; i++) {
-        //create new image element
+    arr.forEach(src => {
         const imgElement = document.createElement('img');
-
-        // set the src attribute of the image using the  images in the array
-        imgElement.src = arr[i];
-
-        //Append the image element to the container
+        imgElement.src = src;
+        imgElement.loading = 'lazy';
         imageContainer.appendChild(imgElement);
+    });
+}
+
+let currentCategory = null;
+
+/* Categorys */
+const soloCategory = document.getElementById('Solos');
+const seniorCategory = document.getElementById('Seniors');
+
+/* Reusable click handler*/
+function handleCategoryClick(categoryName, imageArray) {
+    // if no category is open
+    if (imageContainer.style.display === 'none'){
+        imageContainer.style.display = 'flex';
+        imageGenerator(imageArray);
+        currentCategory = categoryName;
+    }
+    //If teh same category is clicked agian - close it 
+    else if (currentCategory === categoryName){
+        imageContainer.style.display = 'none';
+        imageContainer.innerHTML = '';
+        currentCategory = null;
+    }
+    //if a diffrent car is clicked - replace images
+    else {
+        imageGenerator(imageArray);
+        currentCategory = categoryName;
     }
 }
 
-/* solo shoots */
-const soloCategory = document.getElementById('Solos');
-
-soloCategory.addEventListener('click', () => {
-    
-    if (imageContainer.style.display === 'none' ) {
-        imageContainer.style.display = 'flex';
-        imageGenerator(solos);
-    }
-    else {
-        imageContainer.style.display = 'none';
-    }
-});
-
-/* Senior shoots*/
-
-const seniorCategory = document.getElementById('Seniors');
-
-seniorCategory.addEventListener('click', () => {
-
-    if (imageContainer.style.display === 'none') {
-        imageContainer.style.display = 'flex';
-        imageGenerator(seniors)
-    }
-    else {
-        imageContainer.style.display = 'none';
-    }
-
-})
-
+//click events 
+soloCategory.addEventListener('click', () => handleCategoryClick('solo', solos));
+seniorCategory.addEventListener('click', () => handleCategoryClick('senior', seniors));
 
